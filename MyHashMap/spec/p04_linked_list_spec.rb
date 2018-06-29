@@ -91,7 +91,7 @@ describe LinkedList do
     it "enumerates over the nodes and yields each successive node" do
       list_vals_ordered = k_v_pairs.values
       list_vals_yielded = []
-      list.each do |node|
+       list.each do |node|
         list_vals_yielded << node.val
       end
       expect(list_vals_yielded).to eq(list_vals_ordered)
